@@ -18,7 +18,7 @@ Users submit a sentence, and the application extracts and stores the longest val
 | Backend      | ASP.NET Core 9.0, Entity Framework Core (SQLite) |
 | Logging      | Serilog (console and daily log files)           |
 | Database     | SQLite                                          |
-| Dev Tools    | Swagger, Visual Studio 2022 |
+| Dev Tools    | Swagger, Visual Studio 2022, vscode (optional) |
 
 ---
 
@@ -36,13 +36,13 @@ Users submit a sentence, and the application extracts and stores the longest val
 
 > Prerequisites: .NET 9 SDK+, Node.js 18+, Visual Studio 2022, Angular CLI
 
-### 📦 Backend (API)
+### Backend (API)
 1. Open solution in **Visual Studio 2022**
 2. Set `TopScore.Api` as **startup project**
 3. Run the API (F5 or `dotnet run` from `TopScore.Api`)
 4. Swagger is available at `http://localhost:5210/swagger`
 
-### 🌐 Frontend (Angular)
+### Frontend (Angular)
 1. Open terminal in `top-score-ui/`
 2. Run: `npm install`
 3. Start app: `npx serve dist/top-score-ui/browser` (after build)

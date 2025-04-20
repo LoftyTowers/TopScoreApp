@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.heading {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  font-size: 1.5rem;
+}
+
+.input {
+  height: 100px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.success {
+  color: green;
+  margin-top: 0.5rem;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  margin-top: 10px;
+}
+
+.error-messages {
+  margin-top: 1rem;
+  color: red;
+  font-weight: 500;
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+}

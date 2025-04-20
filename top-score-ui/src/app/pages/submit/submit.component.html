@@ -1,0 +1,28 @@
+  <h2 class="heading">📝 Submit a Sentence</h2>
+  <div class="container">
+
+  <form (ngSubmit)="submitSentence()" class="form">
+    <textarea
+      [(ngModel)]="sentence"
+      name="sentence"
+      placeholder="Enter a sentence..."
+      rows="4"
+      class="input"
+      required
+    ></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn">Submit</button>
+
+    <!-- Validation Messages -->
+    <div *ngIf="success === false && validationErrors.length > 0" class="error-messages">
+      <p *ngFor="let error of validationErrors">❌ {{ error }}</p>
+    </div>
+
+    <!-- Success Message -->
+    <p *ngIf="success" class="success">
+      ✅ Sentence submitted. Saved word: <strong>{{ savedWord }}</strong>
+    </p>
+
+  </form>
+</div>

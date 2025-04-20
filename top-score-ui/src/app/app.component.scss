@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+
+  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    color: #333;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+
+    &.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}

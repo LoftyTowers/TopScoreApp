@@ -1,0 +1,33 @@
+<!-- Page Layout -->
+<div class="container">
+  <h2 class="heading">📚 Saved Words</h2>
+
+  <div *ngIf="words.length === 0 && !error" class="no-words">No words to show.</div>
+
+  <div class="pagination-controls">
+    <label for="pageSizeSelect">Rows per page:</label>
+    <select id="pageSizeSelect" [(ngModel)]="pageSize" (change)="onPageSizeChange()">
+      <option *ngFor="let size of pageSizeOptions" [value]="size">{{ size }}</option>
+    </select>
+  </div>
+
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Search words..."
+      [(ngModel)]="search"
+      (ngModelChange)="onSearchChange()"
+    />
+  </div>
+
+  <app-word-table
+  [words]="words"
+  [totalCount]="totalCount"
+  [page]="page"
+  [pageSize]="pageSize"
+  [pageChanged]="changePage.bind(this)"
+></app-word-table>
+
+  <p *ngIf="error" class="error">❌ Failed to fetch words</p>
+</div>

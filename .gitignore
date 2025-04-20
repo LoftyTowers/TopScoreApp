@@ -1,0 +1,53 @@
+# ========== Dotnet / Visual Studio ==========
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.log
+*.pdb
+
+# Don't include user secrets or local settings
+**/secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# ========== Angular / Node ==========
+node_modules/
+dist/
+.angular/
+.npm/
+package-lock.json
+.env
+
+# ========== VSCode ==========
+.vscode/
+
+# ========== OS-generated ==========
+.DS_Store
+Thumbs.db
+*.tmp
+
+# ========== Logs ==========
+*.log
+Logs/
+log/
+
+# ========== Build output ==========
+*.dll
+*.exe
+*.cache
+*.gz
+*.zip
+*.tgz
+*.tar
+
+# ========== Others ==========
+coverage/
+.idea/
+*.swp
+*.bak
+*.orig

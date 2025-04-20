@@ -36,6 +36,8 @@ Users submit a sentence, and the application extracts and stores the longest val
 
 > Prerequisites: .NET 9 SDK+, Node.js 18+, Visual Studio 2022, Angular CLI
 
+Note: The URLs listed below assume you're running the default configuration (e.g., via Visual Studio or ng serve). If you're using different ports, please adjust accordingly.
+
 ### Backend (API)
 1. Open solution in **Visual Studio 2022**
 2. Set `TopScore.Api` as **startup project**
@@ -47,6 +49,7 @@ Users submit a sentence, and the application extracts and stores the longest val
 2. Run: `npm install`
 3. Start app: `npx serve dist/top-score-ui/browser` (after build)
 4. Or develop live: `ng serve`
+5. Angular Frontend is available at: `http://localhost:4200/`
 
 > Ensure backend is running first before submitting from the frontend.
 
